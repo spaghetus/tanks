@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dong.wav-eb23c29b72d2c0db3d3b41497a94bd86.sample"
+
+[deps]
+
+source_file="res://tmp_audio/dong.wav"
+dest_files=[ "res://.import/dong.wav-eb23c29b72d2c0db3d3b41497a94bd86.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

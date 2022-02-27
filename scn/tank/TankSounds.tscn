@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://tmp_audio/tread.wav" type="AudioStream" id=1]
+[ext_resource path="res://scn/tank/TankSounds.gd" type="Script" id=2]
+
+[node name="TankSounds" type="AudioStreamPlayer3D"]
+stream = ExtResource( 1 )
+script = ExtResource( 2 )

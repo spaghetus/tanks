@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/trumpet3.wav-79e25443e68d15498907ef25c5fce57b.sample"
+
+[deps]
+
+source_file="res://tmp_audio/trumpet3.wav"
+dest_files=[ "res://.import/trumpet3.wav-79e25443e68d15498907ef25c5fce57b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

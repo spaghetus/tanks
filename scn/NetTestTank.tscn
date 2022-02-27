@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://addons/easy_networking/network_syncer.gd" type="Script" id=1]
+[ext_resource path="res://scn/tank/TankPlayerMouse.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scn/tank/TankBase.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scn/tank/TankSounds.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scn/tank/TankPlayerControl.tscn" type="PackedScene" id=5]
+
+[node name="TankBase" instance=ExtResource( 3 )]
+
+[node name="TankPlayerControl" parent="." index="4" instance=ExtResource( 5 )]
+
+[node name="TankSounds" parent="." index="5" instance=ExtResource( 4 )]
+
+[node name="TankPlayerMouse" parent="." index="6" instance=ExtResource( 2 )]
+
+[node name="NetworkSyncer" type="Node" parent="." index="7"]
+script = ExtResource( 1 )
+synced_properties = PoolStringArray( "speed", "turn_speed", "movement", "aim_point", "transform" )
+synced_booleans = PoolStringArray( "moving" )

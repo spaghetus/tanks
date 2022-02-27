@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody",
+"class": "TankBase",
+"language": "GDScript",
+"path": "res://scn/tank/TankBase.gd"
+} ]
+_global_script_class_icons={
+"TankBase": ""
+}
+
+[application]
+
+config/name="Tanks!"
+run/main_scene="res://addons/easy_networking/Lobby.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Networking="*res://addons/easy_networking/networking.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/easy_networking/plugin.cfg", "res://addons/imjp94.yafsm/plugin.cfg", "res://addons/mixing-desk/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

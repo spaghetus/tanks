@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sadwarble.wav-acaf47ba817a869dd6718e93d2fe8a91.sample"
+
+[deps]
+
+source_file="res://tmp_audio/sadwarble.wav"
+dest_files=[ "res://.import/sadwarble.wav-acaf47ba817a869dd6718e93d2fe8a91.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

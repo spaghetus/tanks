@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://mdl/tankbase.glb" type="PackedScene" id=1]
+[ext_resource path="res://scn/tank/TankBase.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 0.5, 1.5 )
+
+[sub_resource type="GDScript" id=2]
+script/source = "tool
+
+extends Spatial
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	var skeleton: Skeleton = $\"../../tankbase/Armature/Skeleton\"
+	var bone = skeleton.find_bone(\"gun\")
+	skeleton.set_bone_pose(bone, transform)
+#	pass
+"
+
+[node name="TankBase" type="KinematicBody"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="tankbase" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.581738, -0.202169 )
+
+[node name="gun_parent" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.31855, -0.246555 )
+
+[node name="gun_handle" type="Spatial" parent="gun_parent"]
+script = SubResource( 2 )
+
+[node name="Tween" type="Tween" parent="."]

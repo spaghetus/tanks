@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/thump2.wav-6f7c3ccc25515bec11cbf11e19a947b3.sample"
+
+[deps]
+
+source_file="res://tmp_audio/thump2.wav"
+dest_files=[ "res://.import/thump2.wav-6f7c3ccc25515bec11cbf11e19a947b3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
